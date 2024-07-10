@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Project - Web Player: Music for everyone by Aditya</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./utility.css" />
+  </head>
+
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="close">
+            <img width="35px" class="invert" src="./close.svg" alt="close" />
+          </div>
+          <div class="logo">
+            <img width="120" class="invert" src="./logo.svg" alt="" />
+          </div>
+          <ul>
+            <li><img class="invert" src="./home.svg" alt="home" />Home</li>
+            <li>
+              <img class="invert" src="./search.svg" alt="search" />search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="./playlist.svg" alt="playlist" />
+            <h2>your library</h2>
+          </div>
+
+          <div class="scroll-container songsList">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="right scroll-container rounded">
+          <nav class="rounded">
+            <div class="navLeft">
+              <div class="hamburger">
+                <img width="30px" class="invert" src="./hamburger.svg" alt="" />
+              </div>
+              <button>
+                <img class="invert" src="./left.svg" alt="left" />
+              </button>
+              <button style="margin-left: 10px">
+                <img class="invert" src="./right.svg" alt="right" />
+              </button>
+            </div>
+            <div class="navRight">
+              <button id="sign">Sign Up</button>
+              <button id="login">Log in</button>
+            </div>
+          </nav>
+          <h2>Spotify Playlist</h2>
+
+          <div class="card">
+            <div class="card-container">
+              <div data-folder="cs" class="card-items">
+                <img src="./1st.jpeg" alt="image" />
+                <h3>Happy Hits!</h3>
+                <p>Hits to boost your mood and fill you with a happiness</p>
+                <div class="svg">
+                  <img src="./play.svg" alt="play" />
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="card-container">
+              <div data-folder="ncs" class="card-items">
+                <img src="./1st.jpeg" alt="image" />
+                <h3>Happy Hits!</h3>
+                <p>Hits to boost your mood and fill you with a happiness</p>
+                <div class="svg">
+                  <img src="./play.svg" alt="play" />
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="playbar">
+            <div class="three-common">
+              <div class="songInfo">song info</div>
+              <div class="bar">
+                <img
+                  height="30px"
+                  id="prev"
+                  class="invert"
+                  src="./previous.svg"
+                  alt="previous Button"
+                />
+                <img
+                  height="30px"
+                  id="play"
+                  class="invert"
+                  src="./play2.svg"
+                  alt="play Button"
+                />
+                <img
+                  height="30px"
+                  id="next"
+                  class="invert"
+                  src="./next.svg"
+                  alt="next Button"
+                />
+              </div>
+              <div class="volume-song-time">
+                <div class="songTime">00:00</div>
+                <div class="volume">
+                  <img class="invert" src="./volume.svg" alt="volume-button" />
+                  <input class="input" type="range" name="volume" id="" />
+                </div>
+              </div>
+            </div>
+            <div class="seekbar">
+              <div class="seekcircle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
